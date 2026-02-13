@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Values — Minimal Streetwear</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Golden Values</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="lookbook.html">Lookbook</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="cart.html">Cart</a>
+      </nav>
+      <button class="icon-btn" data-open-cart>Cart (<span data-cart-count>0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <p class="kicker">Morocco to Europe</p>
+      <h1>Golden Values — Minimal streetwear for ambition, unity and self-belief.</h1>
+      <p class="lead">A premium modern uniform inspired by city movement and clean form. White space, sharp silhouettes and subtle gold identity.</p>
+      <div>
+        <a class="btn" href="shop.html">Shop now</a>
+        <a class="btn gold" href="lookbook.html">See lookbook</a>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>Essentials drop</h2>
+      <p class="lead">7 minimalist t-shirts crafted for daily wear. All sizes available. Each piece is 30€.</p>
+      <div id="home-products" class="grid grid-3"></div>
+    </section>
+
+    <section class="section container grid grid-3">
+      <article class="card"><p class="kicker">01</p><h3>Ambition</h3><p>We design for people who move with intent.</p></article>
+      <article class="card"><p class="kicker">02</p><h3>Unity</h3><p>Built by friends. Worn by a connected community.</p></article>
+      <article class="card"><p class="kicker">03</p><h3>Self-belief</h3><p>Style that reminds you to trust your own direction.</p></article>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">© Golden Values — Minimal streetwear brand.</div></footer>
+
+  <div id="overlay" class="overlay"></div>
+  <aside id="cart-drawer" class="cart-drawer">
+    <div class="cart-header"><strong>Your cart</strong> <button id="close-cart" class="btn" style="float:right">Close</button></div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer"><p>Total: <strong id="cart-total">0€</strong></p><a href="cart.html" class="btn gold">Go to cart page</a></div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>
